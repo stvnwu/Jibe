@@ -44,9 +44,10 @@ exports.createParty = function (req, res) {
 exports.joinParty = function (req, res) {
   console.log('Join party.');
   // Party name
-  var name = req.body.name;
-
-  Party.findOne({ name: name })
+  var party = req.body.name;
+  console.log('body', req.body);
+  
+  Party.findOne({name: party })
     .exec(function(err, party) {
       if (!party) {
         // No party. Teapot.

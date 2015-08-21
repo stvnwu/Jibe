@@ -16,9 +16,14 @@ home.factory('HomeServices', function ($location) {
   var services = {};
 
   services.joinParty = function () {
+
+
     console.log('joining party');
     // This needs to query the server to see if there is a party with the name typed into the input box
+
     $location.path('/portal');
+
+
   };
 
   return services;
