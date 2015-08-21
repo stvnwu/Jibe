@@ -8,7 +8,6 @@ var Party = require('./db-config.js');
 
 exports.getPlaylist = function (req, res) {
   console.log('Get playlist.');
-
 };
 
 exports.createParty = function (req, res) {
